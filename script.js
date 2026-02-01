@@ -1,6 +1,6 @@
 const projects = [
   { name: "Todo App", description: "A simple todo app.", path: "projects/todo", category: "App" },
-  { name: "weather-app", description: "Using Fetch api it fetch whether Whether data over the world", path: "projects/whether-app", category: "App" }
+  { name: "weather-app", description: "Using Fetch api it fetch whether Whether data over the world", path: "projects/weather-app", category: "App" }
 ];
 
 const projectList = document.getElementById("projectList");
