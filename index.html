@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Koushik Portfolio - JS Projects</title>
+  <link rel="stylesheet" href="style.css">
+<script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+<script>
+  function addDarkmodeWidget() {
+    new Darkmode().showWidget();
+  }
+  window.addEventListener('load', addDarkmodeWidget);
+</script>
+</head>
+<body>
+<button
+  class="theme-toggle"
+  type="button"
+  title="Toggle theme"
+  aria-label="Toggle theme"
+>
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    aria-hidden="true"
+    width="1em"
+    height="1em"
+    class="theme-toggle__dark-side"
+    fill="currentColor"
+    viewBox="0 0 32 32"
+  >
+    <path d="M16 .5C7.4.5.5 7.4.5 16S7.4 31.5 16 31.5 31.5 24.6 31.5 16 24.6.5 16 .5zm0 28.1V3.4C23 3.4 28.6 9 28.6 16S23 28.6 16 28.6z" />
+  </svg>
+</button>
+  <section id="projects">
+
+    <h2>My JavaScript Projects</h2>
+    <div class="payment">
+      <p>Please Donate if Found Useful</p>
+     <span><a  target="_blank" href="https://rzp.io/rzp/Nqz5ZPz">Donate</a></span>
+    </div>
+
+    <div>
+    <button id="mybutton">Light/Dark</button>
+   </div>
+
+    <input type="text" id="search" placeholder="Search projects...">
+    <select id="categoryFilter">
+      <option value="all">All Categories</option>
+      <option value="UI">UI</option>
+      <option value="App">App</option>
+      <option value="Utility">Utility</option>
+    </select>
+    <div id="projectList"></div>
+  </section>
+
+  <!-- Modal -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span id="closeModal">&times;</span>
+      <iframe id="projectPreview"></iframe>
+    </div>
+  </div>
+
+  
+
+  <script src="script.js"></script>
+</body>
+</html>
