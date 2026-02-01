@@ -116,3 +116,15 @@ async function loadCode(path, file) {
   }
 }
 
+const darkmode = new Darkmode({
+  bottom: 'unset',
+  right: 'unset',
+  left: 'unset',
+  time: '0.3s',
+  saveInCookies: true,
+  autoMatchOsTheme: true
+});
+
+document.getElementById("mybutton").addEventListener("click", () => {
+  darkmode.toggle();
+});
