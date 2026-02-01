@@ -116,17 +116,3 @@ async function loadCode(path, file) {
   }
 }
 
-
-const toggleBtn = document.getElementById("mybutton");
-const body = document.body;
-
-toggleBtn.addEventListener("click", function () {
-  body.classList.toggle("dark");
-
-  // Optional: Change button text dynamically
-  if (body.classList.contains("dark")) {
-    mybutton.textContent = "Dark mode";
-  } else {
-    mybutton.textContent = "Light Mode";
-  }
-});
